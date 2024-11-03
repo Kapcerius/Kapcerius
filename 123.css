@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    font-family: 'Lucida Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 0.25rem solid green;
+    border-radius: 0.5rem;
+  }
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    /*clippy*/
+    clip-path: polygon(0 100%, 100% 35%, 100% 59%, 0 28%, 0 0, 54% 100%, 36% 0, 100% 0);
+    transform: scale(0);
+    background-color: green;
+  }
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: rgb(255, 255, 255);
+  }
+input[type="checkbox"]:hover {
+    color: rgb(134, 7, 7);
+  }
+#myBallon{
+  font-size: 1.5em;
+  background-color: green;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 3s ease-in-out;
+  cursor: pointer;
+}
+#myBallon:active{
+  transform: scale(2);
+  background-color: red;
+  border: white 5px solid;
+  color: white;
+}
+#mySubmit{
+  font-size: 1.2em;
+  background-color: green;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#mySubmit:active{
+  color: white;
+}
+#mySubmit:hover{
+  background-color: greenyellow;
+}
+#jakMocno {
+  display: none; /* Ukryj obrazek początkowo */
+  width: 700px;
+}
+
+  
+  
+  
+  
+  
+  
